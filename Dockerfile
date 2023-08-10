@@ -2,6 +2,7 @@
 FROM nginx:latest
 
 # Copy the web pages into the container
+COPY index.html /usr/share/nginx/html/
 COPY page1.html /usr/share/nginx/html/
 COPY page2.html /usr/share/nginx/html/
 COPY page3.html /usr/share/nginx/html/
